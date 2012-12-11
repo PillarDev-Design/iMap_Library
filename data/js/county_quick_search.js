@@ -14,6 +14,9 @@ function countyQuickSearch(filePath){
     // The function loads a JSON file that is formatted, and loops through to \\
     // add states to the select list, and add events that trigger when        \\
     // options are selected in any select list.                               \\
+    //                                                                        \\
+    //      This function loads and sets up the Library Quick Search section  \\
+    // on the main landing page.                                              \\
     //########################################################################\\
     
     d3.json(filePath, function(libraries){
@@ -95,7 +98,7 @@ function countyQuickSearch(filePath){
 
             for(var i=0; i<numOfStates; i++){
                 if(libraries['states'][i][0]['name'] === selectedState){
-                    var numOfCounties = libraries['states'][i][0]['counties'].length;
+                    numOfCounties = libraries['states'][i][0]['counties'].length;
                     for(var j=0; j<numOfCounties; j++){
                         placeHolder += ("<option value='" + libraries['states'][i][0]['counties'][j][0]['name'] + "'>" + libraries['states'][i][0]['counties'][j][0]['name'] + "</option>");
                     }

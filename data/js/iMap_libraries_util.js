@@ -5,10 +5,6 @@
 //############################################################################\\
 
 function initialize(){
-    //########################################################################\\
-    // countyQuickSearch(filePath)                                            \\
-    // ---------------------------------------------------------------------- \\
-    // Initialize the countyQuickSearch function with a JSON file             \\
-    //########################################################################\\
     countyQuickSearch("/data/json/library.json");
+    mainSearch("/data/json/library.json");
 }

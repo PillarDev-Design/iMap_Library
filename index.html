@@ -8,6 +8,7 @@
         <script type='text/javascript' src='/data/js/mootools.js'></script>
         <script type='text/javascript' src='/data/js/county_quick_search.js'></script>
         <script type='text/javascript' src='/data/js/iMap_libraries_util.js'></script>
+        <script type='text/javascript' src='/data/js/main_search.js'></script>
         <!-- CSS Imports -->
         <link href='/data/css/iMap_Library_Style.css' rel='stylesheet' type='text/css' />
     </head>
@@ -76,8 +77,8 @@
             </div> <!-- END current_selection_label_container -->
             <div id='first_main_container'>
                 <div id='first_section_scroll_area'>
-                    <select size='23' id='first_section_select'
-                        name='first_section_select'>
+                    <select size='23' id='first_section_select_state'
+                        name='first_section_select_state'>
                     </select>
                 </div>
                 <div id='first_section_map_area'>
@@ -130,6 +131,11 @@
                             </div>
                         </div>
                         <div class='clear'></div>
+                    </div>
+                </div> <!-- END county_quick_search_wrapper -->
+                <div id='second_section_wrapper' style='opacity:0; visibility: hidden;'>
+                    <div id='second_section_label'></div>
+                    <div id='second_section_content'>
                     </div>
                 </div>
             </div> <!-- END county_quick_search_container -->
