@@ -368,6 +368,50 @@ body, html{
             position: relative;
             width: 98%;
         }
+            #second_section_content_left{
+                background: #E4FFC5;
+                border: 1px solid #CCC;
+                float: left;
+                height: 96%;
+                margin-left: 1%;
+                position: relative;
+                top: 13px;
+                width: 38%;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+                #second_section_content_left_title{
+                    border-bottom: 1px solid #C4B8B8;
+                    font-size: 1.2em;
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+                }
+                #second_section_content_left_content{
+                }
+            #second_section_content_right{
+                background: #E4FFC5;
+                border: 1px solid #CCC;
+                float: left;
+                height: 96%;
+                margin-left: 1%;
+                position: relative;
+                top: 13px;
+                width: 59%;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+                #second_section_content_right_title{
+                    border-bottom: 1px solid #C4B8B8;
+                    font-size: 1.2em;
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+                }
+                #second_section_content_right_content{
+                }
     #footer_wrapper{
         bottom: 0;
         display: none;
