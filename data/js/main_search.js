@@ -81,7 +81,14 @@ function mainSearch(filePath){
         
         // 2)
         $('first_section_select_state').addEvent('change', function(){
-                if($('first_section_select_state').value === ""){
+            addEventToMainStateSelect();
+        });
+
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+        // addEventToMainStateSelect
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+        function addEventToMainStateSelect(){
+            if($('first_section_select_state').value === ""){
                 } else {
                 // Save the selectedState
                 selectedState = $('first_section_select_state').value;
@@ -164,9 +171,11 @@ function mainSearch(filePath){
                 
                 // 2.15) Add Event to the first_section_select_county         \\
             }
-        });
+
+        }
+
         //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
-        // countyBackButton (Back Function)                                   \\
+        // countyBackButton - "Back Function"                                 \\
         // ------------------------------------------------------------------ \\
         // We need to reset the page.                                         \\
         // 1) Fade Breadcrumbs                                                \\
@@ -209,7 +218,9 @@ function mainSearch(filePath){
             placeHolder += "</select>";
             $('first_section_scroll_area').innerHTML = "";
             $('first_section_scroll_area').innerHTML = placeHolder;
-            
+            $('first_section_select_state').addEvent('change', function(){
+                addEventToMainStateSelect();
+            });
 
             // 8) Fade in Breadcrumbs                                         \\
             $('current_selection_label_dynamic').set('tween', { duration: 1100 }).fade('in');
