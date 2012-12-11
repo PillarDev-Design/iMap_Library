@@ -1,0 +1,305 @@
+/*****************************************************\
+ * iMap_Library_Style.css                            *
+\*****************************************************/
+body, html{
+    background: #9DC63F;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.clear{
+    clear: both;
+}
+
+
+#site_container{
+    min-height: 100%;
+    position: relative;
+}
+    #header_wrapper{
+        background: #E4FFC5;
+        border-bottom: 2px solid #CCC;
+        height: 144px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 97%;
+    }
+        #header_left_side{
+            background: url(../img/logo.png) no-repeat;
+            float: left;
+            height: 139px;
+            position: relative;
+            width: 26%;
+        }
+        #header_right_side{
+            float: left;
+            height: 139px;
+            position: relative;
+            width: 74%;
+        }
+            #header_right_side_top{
+                height: 74%;
+                position: relative;
+                width: 99%;
+            }
+                #institute_logo{
+                    background: url(../img/institute.png) no-repeat;
+                    float: right;
+                    height: 97px;
+                    position: relative;
+                    width: 245px;
+                }
+                #twitter_logo{
+                    float: right;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 40%;
+                }
+                    #twitter_logo:hover{
+                        -moz-box-shadow: 0 15px 40px #CCC inset;
+                        -webkit-box-shadow: 0 15px 40px #CCC inset;
+                        box-shadow: 0 15px 40px #CCC inset;
+                    }
+                #facebook_logo{
+                    float: right;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 40%;
+                }
+                    #facebook_logo:hover{
+                        -moz-box-shadow: 0 15px 40px #CCC inset;
+                        -webkit-box-shadow: 0 15px 40px #CCC inset;
+                        box-shadow: 0 15px 40px #CCC inset;
+                    }
+            #header_right_side_bottom{
+                background: #9DC63F;
+                border-left: 1px solid #9DC63F;
+                height: 24%;
+                position: relative;
+                width: 100%;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+            }
+                #nav_bar_wrapper{
+                    height: 100%;
+                    width: 100%;
+                }
+                    .nav_bar_item{
+                        border: 1px solid black;
+                        cursor: pointer;
+                        float: left;
+                        font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                        font-size: .8em;
+                        height: 60%;
+                        margin-left: 3%;
+                        margin-top: 3px;
+                        padding-top: 5px;
+                        text-align: center;
+                        width: 9%;
+                        -moz-box-shadow: 0px 5px 10px #E4FFC5 inset;
+                        -webkit-box-shadow: 0px 5px 10px #E4FFC5 inset;
+                        box-shadow: 0px 5px 10px #E4FFC5 inset;
+                        -moz-border-radius: 5px;
+                        -webkit-border-radius: 5px;
+                        border-radius: 5px;
+                    }
+                    .nav_bar_item:hover{
+                        -moz-box-shadow: 0px 5px 10px #CCC inset;
+                        -webkit-box-shadow: 0px 5px 10px #CCC inset;
+                        box-shadow: 0px 5px 10px #CCC inset;
+                    }
+                    #nav_bar_diversity_data{
+                        font-size: .75em !important;
+                    }
+                    #nav_bar_register_here{
+                        font-size: .75em !important;
+                    }
+        #extra_green_header_square{
+            background: #9DC63F;
+            height: 33px;
+            left: 1230px;
+            position: absolute;
+            top: 103px;
+            width: 33px;
+            z-index: 9999;
+        }
+    #current_selection_label_container{
+        background: #E4FFC5;
+        border-bottom: 2px solid #CCC;
+        height: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: -5px;
+        width: 97%;
+    }
+        #current_selection_label{
+            background: #F2F2E6;
+            border: 1px solid #CCC;
+            height: 70%;
+            margin: 5px;
+            position: relative;
+            top: 4px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+            #current_selection_label_static{
+                float: left;
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                margin-left: 20px;
+                margin-right: 10px;
+                margin-top: 4px;
+                position: relative;
+            }
+            #current_selection_label_dynamic{
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                float: left;
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                font-size: .9em;
+                font-weight: bold;
+                margin-left: 20px;
+                margin-top: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                -moz-box-shadow: 0px 5px 10px #CCC inset;
+                -webkit-box-shadow: 0px 5px 10px #CCC inset;
+                box-shadow: 0px 5px 10px #CCC inset;
+            }
+    #first_main_container{
+        background: #E4FFC5;
+        border-bottom: 2px solid #CCC;
+        height: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: -5px;
+        width: 97%;
+    }
+        #first_section_scroll_area{
+            background: #F2F2E6;
+            border: 1px solid #CCC;
+            float: left;
+            height: 98%;
+            position: relative;
+            top: 3px;
+            width: 30%;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+            #first_section_scroll_area select{
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                margin: 10px;
+                position: relative;
+                width: 95%;
+            }
+        #first_section_map_area{
+            background: #F2F2E6;
+            border: 1px solid #CCC;
+            float: left;
+            height: 98%;
+            margin-left: 8px;
+            position: relative;
+            top: 3px;
+            width: 69%;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+            #first_section_map_area_temp_label{
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                font-size: 3em;
+                font-weight: bold;
+                position: relative;
+                text-align: center;
+                top: 35%;
+            }
+    #county_quick_search_container{
+        background: #E4FFC5;
+        border-bottom: 2px solid #CCC;
+        height: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: -5px;
+        width: 97%;
+    }
+        #county_quick_search_wrapper{
+            background: #F2F2E6;
+            border: 1px solid #CCC;
+            height: 97%;
+            margin-left: 1%;
+            position: relative;
+            top: 3px;
+            width: 98%;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+        }
+            #county_quick_search_label{
+                border-bottom: 1px solid #CCC;
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                font-size: 1.5em;
+                font-weight: bold;
+                height: 12%;
+                padding-top: 10px;
+                position: relative;
+                text-align: center;
+            }
+            #county_quick_search_select_containers{
+                height: 80%;
+                margin-left: 1%;
+                position: relative;
+                width: 98%;
+            }
+                .county_quick_search_select_container{
+                    background: #E4FFC5;
+                    border: 1px solid #CCC;
+                    float: left;
+                    height: 96%;
+                    margin-left: 1%;
+                    margin-top: 1%;
+                    position: relative;
+                    width: 32%;
+                    -moz-border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;
+                }
+                    .county_quick_search_select_container select{
+                        bottom: -40px;
+                        font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                        margin: 10px;
+                        position: relative;
+                        width: 95%;
+                    }
+                #county_quick_search_state{
+                }
+                #county_quick_search_county{
+                }
+                #county_quick_search_library{
+                }
+    #footer_wrapper{
+        bottom: 0;
+        display: none;
+        height: 50px;
+        margin: 30px 0px 0px 0px;
+        position: absolute;
+        text-align: right;
+        width: 100%;
+    }
