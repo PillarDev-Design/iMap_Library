@@ -89,6 +89,7 @@ body, html{
                     width: 100%;
                 }
                     .nav_bar_item{
+                        background: #DDD;
                         border: 1px solid black;
                         cursor: pointer;
                         float: left;
@@ -100,9 +101,9 @@ body, html{
                         padding-top: 5px;
                         text-align: center;
                         width: 9%;
-                        -moz-box-shadow: 0px 5px 10px #E4FFC5 inset;
-                        -webkit-box-shadow: 0px 5px 10px #E4FFC5 inset;
-                        box-shadow: 0px 5px 10px #E4FFC5 inset;
+                        -moz-box-shadow: 0px 5px 10px #FCFCFC inset;
+                        -webkit-box-shadow: 0px 5px 10px #FCFCFC inset;
+                        box-shadow: 0px 5px 10px #FCFCFC inset;
                         -moz-border-radius: 5px;
                         -webkit-border-radius: 5px;
                         border-radius: 5px;
