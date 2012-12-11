@@ -6,7 +6,8 @@
         <!-- JavaScript Imports -->
         <script type='text/javascript' src='/data/js/d3.v2.min.js'></script>
         <script type='text/javascript' src='/data/js/mootools.js'></script>
-        <script type='text/javascript' src='/data/js/finder_util.js'></script>
+        <script type='text/javascript' src='/data/js/county_quick_search.js'></script>
+        <script type='text/javascript' src='/data/js/iMap_libraries_util.js'></script>
         <!-- CSS Imports -->
         <link href='/data/css/iMap_Library_Style.css' rel='stylesheet' type='text/css' />
     </head>
@@ -75,7 +76,7 @@
             </div> <!-- END current_selection_label_container -->
             <div id='first_main_container'>
                 <div id='first_section_scroll_area'>
-                    <select size=23 id='first_section_select'
+                    <select size='23' id='first_section_select'
                         name='first_section_select'>
                     </select>
                 </div>
@@ -85,7 +86,7 @@
                     </div>
                 </div>
                 <div class='clear'></div>
-            </div>
+            </div> <!-- END first_main_container -->
             <div id='county_quick_search_container'>
                 <div id='county_quick_search_wrapper'>
                     <div id='county_quick_search_label'>
@@ -94,26 +95,44 @@
                     <div id='county_quick_search_select_containers'>
                         <div id='county_quick_search_state'
                             class='county_quick_search_select_container'>
-                            <select size=12 id='county_quick_search_select_state'
-                                name='county_quick_search_select_state'>
-                            </select>
+                            <div id='county_quick_search_label_state'
+                                class='county_quick_search_label'>
+                                States
+                            </div>
+                            <div id='county_quick_search_select_container_state'>
+                                <select size='13' id='county_quick_search_select_state'
+                                    name='county_quick_search_select_state'>
+                                </select>
+                            </div>
                         </div>
                         <div id='county_quick_search_county'
                             class='county_quick_search_select_container'>
-                            <select size=12 id='county_quick_search_select_county'
-                                name='county_quick_search_select_county'>
-                            </select>
+                            <div id='county_quick_search_label_county'
+                                class='county_quick_search_label'>
+                                Counties
+                            </div>
+                            <div id='county_quick_search_select_container_county'>
+                                <select size='13' id='county_quick_search_select_county'
+                                    name='county_quick_search_select_county'>
+                                </select>
+                            </div>
                         </div>
                         <div id='county_quick_search_library'
                             class='county_quick_search_select_container'>
-                            <select size=12 id='county_quick_search_select_library'
-                                name='county_quick_search_select_library'>
-                            </select>
+                            <div id='county_quick_search_label_libraries'
+                                class='county_quick_search_label'>
+                                Libraries
+                            </div>
+                            <div id='county_quick_search_select_container_library'>
+                                <select size='13' id='county_quick_search_select_library'
+                                    name='county_quick_search_select_library'>
+                                </select>
+                            </div>
                         </div>
                         <div class='clear'></div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- END county_quick_search_container -->
             <div id='footer_wrapper'>
                 Placeholder text for the footer
             </div>

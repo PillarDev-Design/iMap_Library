@@ -202,6 +202,7 @@ body, html{
             border-radius: 10px;
         }
             #first_section_scroll_area select{
+                background: #EEE;
                 font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
                 margin: 10px;
                 position: relative;
@@ -282,18 +283,38 @@ body, html{
                     border-radius: 10px;
                 }
                     .county_quick_search_select_container select{
-                        bottom: -40px;
+                        background: #EEE;
+                        bottom: -2px;
                         font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
                         margin: 10px;
                         position: relative;
                         width: 95%;
                     }
+                .county_quick_search_label{
+                    border-bottom: 1px solid #C4B8B8;
+                    font-size: 1.2em;
+                    position: relative;
+                    text-align: center;
+                    width: 100%;
+                }
                 #county_quick_search_state{
                 }
+                    #county_quick_search_label_state{
+                    }
+                    #county_quick_search_select_container_state{
+                    }
                 #county_quick_search_county{
                 }
+                    #county_quick_search_label_county{
+                    }
+                    #county_quick_search_select_container_county{
+                    }
                 #county_quick_search_library{
                 }
+                    #county_quick_search_label_library{
+                    }
+                    #county_quick_search_select_container_library{
+                    }
     #footer_wrapper{
         bottom: 0;
         display: none;

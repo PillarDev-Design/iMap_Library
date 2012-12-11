@@ -1,0 +1,52 @@
+{
+    "states": [
+        [
+            {
+                "name": "Florida",
+                "counties": [
+                    [
+                        {
+                            "name": "county_one",
+                            "libraries": [
+                                "library_one",
+                                "library_two"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "county_two",
+                            "libraries": [
+                                "library_three"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "Georgia",
+                "counties": [
+                    [
+                        {
+                            "name": "county_three",
+                            "libraries": [
+                                "library_four"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "county_four",
+                            "libraries": [
+                                "library_five",
+                                "library_six"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ]
+    ]
+}

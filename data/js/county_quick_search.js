@@ -1,11 +1,11 @@
-function finderInit(filePath){
+function countyQuickSearch(filePath){
     //########################################################################\\
-    // finder_init(filePath)                                                  \\
+    // countyQuickSearch(filePath)                                            \\
     // ---------------------------------------------------------------------- \\
     // PARAMETERS                                                             \\
     // - filePath: When calling this function, use a string that is the file  \\
     //      path of the JSON file you want to load. For example, use          \\
-    //      finderInit("/data/json/library.json");                            \\
+    //      countyQuickSearch("/data/json/library.json");                     \\
     //                                                                        \\
     // ---------------------------------------------------------------------- \\
     // PURPOSE                                                                \\
@@ -15,7 +15,7 @@ function finderInit(filePath){
     // add states to the select list, and add events that trigger when        \\
     // options are selected in any select list.                               \\
     //########################################################################\\
-
+    
     d3.json(filePath, function(libraries){
         //####################################################################\\
         // Declare Variables                                                  \\
@@ -27,12 +27,6 @@ function finderInit(filePath){
             selectedCounty,
             numOfCounties;
         
-        //####################################################################\\
-        // Create testVar. Can be accessed in console to look at the JSON     \\
-        //  object that was loaded.                                           \\
-        //####################################################################\\
-        testVar = libraries;
-
         //####################################################################\\
         // Examples                                                           \\
         // ------------------------------------------------------------------ \\
@@ -62,11 +56,6 @@ function finderInit(filePath){
         //####################################################################\\
         
         //####################################################################\\
-        // Populate an HTML element to show the current JSON file name        \\
-        //####################################################################\\
-        $('current_json').innerHTML = ("Current JSON: " + filePath);
-        
-        //####################################################################\\
         // Populate the stateList array                                       \\
         //####################################################################\\
         for(var i=0; i<numOfStates; i++){
@@ -78,30 +67,31 @@ function finderInit(filePath){
         //####################################################################\\
         // Clear
         placeHolder = "";
-        placeHolder += "<select size='10' id='state' class='wide_select' name='state'>";
+        placeHolder += "<select size='13' id='county_quick_search_select_state' name='county_quick_search_select_state'>";
         
         for(var i=0; i<numOfStates; i++){
             placeHolder += ("<option value='" + stateList[i] + "'>" + stateList[i] + "</option>");
         }
         placeHolder += "</select>";
-        $('state_selection').innerHTML = placeHolder;
+        $('county_quick_search_select_container_state').innerHTML = "";
+        $('county_quick_search_select_container_state').innerHTML = placeHolder;
 
         //####################################################################\\
         // Create Select List for Counties                                    \\
         //####################################################################\\
-        $('state').addEvent('change', function(){
+        $('county_quick_search_select_state').addEvent('change', function(){
             //################################################################\\
             // Clear the placeHolder/elements                                 \\
             //################################################################\\
             placeHolder = "";
-            $('county_selection').innerHTML = "";
-            $('library_selection').innerHTML = "<select size='10' id='library' class='wide_select' name='library'></select>";
+            $('county_quick_search_select_container_county').innerHTML = "";
+            $('county_quick_search_select_container_library').innerHTML = "<select size='13' id='county_quick_search_select_library' name='county_quick_search_select_library'></select>";
 
             //################################################################\\
             // Build the placeHolder                                          \\
             //################################################################\\
-            placeHolder = "<select size='10' id='county' class='wide_select' name='county'>";
-            selectedState = $('state').value;
+            placeHolder = "<select size='13' id='county_quick_search_select_county' name='county_quick_search_select_county'>";
+            selectedState = $('county_quick_search_select_state').value;
 
             for(var i=0; i<numOfStates; i++){
                 if(libraries['states'][i][0]['name'] === selectedState){
@@ -115,25 +105,25 @@ function finderInit(filePath){
             // Close the select list, then set the element to the placeHolder \\
             //################################################################\\
             placeHolder += "</select>";
-            $('county_selection').innerHTML = placeHolder;
+            $('county_quick_search_select_container_county').innerHTML = placeHolder;
 
             //################################################################\\
             // Create Select List for Libraries                               \\
             //################################################################\\
-            $('county').addEvent('change', function(){
+            $('county_quick_search_select_county').addEvent('change', function(){
                 //############################################################\\
                 // Clear the placeHolder/elements                             \\
                 //############################################################\\
                 placeHolder = "";
-                $('library_selection').innerHTML = "";
+                $('county_quick_search_select_container_library').innerHTML = "";
 
                 //############################################################\\
                 // Build the placeHolder                                      \\
                 //############################################################\\
-                placeHolder = "<select size='10' id='library' class='wide_select' name='library'>";
-                selectedState = $('state').value;
-                selectedCounty = $('county').value;
-                numOfCounties = $('county').options.length;
+                placeHolder = "<select size='13' id='county_quick_search_select_library' name='county_quick_search_select_library'>";
+                selectedState = $('county_quick_search_select_state').value;
+                selectedCounty = $('county_quick_search_select_county').value;
+                numOfCounties = $('county_quick_search_select_county').options.length;
 
                 for (var i=0; i<numOfStates; i++){
                     if(libraries['states'][i][0]['name'] === selectedState){
@@ -153,10 +143,11 @@ function finderInit(filePath){
                 //  placeHolder                                               \\
                 //############################################################\\
                 placeHolder += "</select>";
-                $('library_selection').innerHTML = placeHolder;
+                $('county_quick_search_select_container_library').innerHTML = placeHolder;
             });
         });
         
 
     });
+
 }
