@@ -121,9 +121,9 @@ body, html{
         #extra_green_header_square{
             background: #9DC63F;
             height: 33px;
-            left: 1230px;
             position: absolute;
-            top: 103px;
+            right: -17px;
+            top: 0px;
             width: 33px;
             z-index: 9999;
         }
