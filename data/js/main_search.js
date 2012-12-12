@@ -381,7 +381,67 @@ function mainSearch(filePath){
             });
         }
         function libraryBackToStateButton(){
-            console.log('Function Triggered: libraryBackToStateButton');
+            //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+            // EVENTS                                                         \\
+            //----------------------------------------------------------------\\
+            // 1. Update Breadcrumbs                                          \\
+            // 2. Fade out                                                    \\
+            //    - first_section_select_library                              \\
+            //    - first_section_back_library                                \\
+            //    - first_section_back_to_state_library                       \\
+            //    - second_section_county_wrapper                             \\
+            //    - third_section_county_data_vis_container                   \\
+            // 3. Create                                                      \\
+            //    - first_section_select_state                                \\
+            // 4. Fade in                                                     \\
+            //    - first_section_select_state                                \\
+            //    - county_quick_search_wrapper                               \\
+            //    - home_page_information_container                           \\
+            // 5. Add Events                                                  \\
+            //    - first_section_select_state                                \\
+            //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+            
+            // 1. Update Breadcrumbs                                          \\
+            placeHolder = "";
+            placeHolder += "<div class='current_selection_label_dynamic_scheme'>None Selected</div>";
+            $('current_selection_label_dynamic_container').innerHTML = placeHolder;
+            
+            // 2. Fade out                                                    \\
+            //    - first_section_select_library                              \\
+            //    - first_section_back_library                                \\
+            //    - first_section_back_to_state_library                       \\
+            //    - second_section_county_wrapper                             \\
+            //    - third_section_county_data_vis_container                   \\
+            $('first_section_select_library').set('tween', { duration: 1000 }).fade('out');
+            $('first_section_back_library').set('tween', { duration: 1000 }).fade('out');
+            $('first_section_back_to_state_library').set('tween', { duration: 1000 }).fade('out');
+            $('second_section_county_wrapper').set('tween', { duration: 1000 }).fade('out');
+            $('third_section_county_data_vis_container').set('tween', { duration: 1000 }).fade('out');
+            
+            // 3. Create                                                      \\
+            //    - first_section_select_state                                \\
+            placeHolder = "";
+            placeHolder += "<select size='23' id='first_section_select_state' name='first_section_select_state' style='opacity: 0; visibility: hidden;'>";
+            for(var i=0; i<numOfStates; i++){
+                placeHolder += ("<option value='" + stateList[i] + "'>" + stateList[i] + "</option>");
+            }
+            placeHolder += "</select>";
+            $('first_section_scroll_area').innerHTML = "";
+            $('first_section_scroll_area').innerHTML = placeHolder;
+            
+            // 4. Fade in                                                     \\
+            //    - first_section_select_state                                \\
+            //    - county_quick_search_wrapper                               \\
+            //    - home_page_information_container                           \\
+            $('first_section_select_state').set('tween', { duration: 1100 }).fade('in');
+            $('county_quick_search_wrapper').set('tween', { duration: 1100 }).fade('in');
+            $('home_page_information_container').set('tween', { duration: 1100 }).fade('in');
+            
+            // 5. Add Events                                                  \\
+            //    - first_section_select_state                                \\
+            $('first_section_select_state').addEvent('change', function(){
+                addEventToMainStateSelect();
+            });
         }
         function countyBackButton(){
             //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
@@ -423,7 +483,6 @@ function mainSearch(filePath){
             //    - first_section_select_state                                \\
             placeHolder = "";
             placeHolder += "<select size='23' id='first_section_select_state' name='first_section_select_state' style='opacity: 0; visibility: hidden;'>";
-
             for(var i=0; i<numOfStates; i++){
                 placeHolder += ("<option value='" + stateList[i] + "'>" + stateList[i] + "</option>");
             }
@@ -444,7 +503,6 @@ function mainSearch(filePath){
             $('first_section_select_state').addEvent('change', function(){
                 addEventToMainStateSelect();
             });
-
         }
     });
 }
