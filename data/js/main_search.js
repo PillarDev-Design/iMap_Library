@@ -118,6 +118,7 @@ function mainSearch(filePath){
 
                 // 2.2) Fade the Library Quick Search area                    \\
                 $('county_quick_search_wrapper').set('tween', { duration: 1000 }).fade('out');
+                $('home_page_information_container').set('tween', { duration: 1000 }).fade('out');
 
                 // 2.3) Fade out the Breadcrumbs                              \\
                 $('current_selection_label_dynamic').set('tween', { duration: 1000 }).fade('out');
@@ -158,6 +159,7 @@ function mainSearch(filePath){
                 
                 // 2.11) Fade in the State Attributes section                 \\
                 $('second_section_wrapper').set('tween', { duration: 1100 }).fade('in');
+                $('third_section_county_data_vis_container').set('tween', { duration: 1100 }).fade('in');
                 
                 // 2.12) Fade in the County Search Section                    \\
                 
@@ -201,6 +203,7 @@ function mainSearch(filePath){
             
             // 4) Fade second_section_wrapper                                 \\
             $('second_section_wrapper').set('tween', { duration: 1000 }).fade('out');
+            $('third_section_county_data_vis_container').set('tween', { duration: 1000 }).fade('out');
             
             // 5) Fade County Search Area                                     \\
             
@@ -230,6 +233,7 @@ function mainSearch(filePath){
             
             // 10) Fade in county_quick_search_wrapper                        \\
             $('county_quick_search_wrapper').set('tween', { duration: 1100 }).fade('in');
+            $('home_page_information_container').set('tween', { duration: 1100 }).fade('in');
         }
     });
 }

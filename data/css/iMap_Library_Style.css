@@ -412,6 +412,63 @@ body, html{
                 }
                 #second_section_content_right_content{
                 }
+    #third_section_container{
+        background: #E4FFC5;
+        border-bottom: 2px solid #CCC;
+        height: 500px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        top: -5px;
+        width: 97%;
+    }
+        #home_page_information_container{
+        }
+            #home_page_information_label{
+            }
+            #home_page_information_content{
+            }
+        #third_section_county_data_vis_container{
+            margin-left: 0% !important;
+            opacity: 0;
+            position: absolute !important;
+            width: 98% !important;
+            visibility: hidden;
+        }
+            #third_section_county_data_vis_label{
+            }
+            #third_section_county_data_vis_content{
+            }
+        .third_section_container{
+            background: #F2F2E6;
+            border: 1px solid #CCC;
+            height: 97%;
+            margin-left: 1%;
+            position: relative;
+            top: 5px;
+            width: 98%;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+        }
+            .third_section_label{
+                border-bottom: 1px solid #CCC;
+                font-family: 'Lucinda Sans Unicode', 'Lucinda Grande', sans-serif;
+                font-size: 1.5em;
+                font-weight: bold;
+                height: 12%;
+                padding-top: 10px;
+                position: relative;
+                text-align: center;
+            }
+            .third_section_content{
+                height: 80%;
+                margin-left: 1%;
+                position: relative;
+                width: 98%;
+            }
     #footer_wrapper{
         bottom: 0;
         display: none;
