@@ -2,6 +2,264 @@
     "states": [
         [
             {
+                "name": "Connecticut",
+                "counties": [
+                    [
+                        {
+                            "name": "Fairfield",
+                            "libraries": [
+                                 "Bethel Public Library",
+                                 "Black Rock Branch Library",
+                                 "Brookfield Library",
+                                 "Byram Shubert Branch Library",
+                                 "Cos Cob Branch Library",
+                                 "Cyrenius H. Booth Library",
+                                 "Darien Library",
+                                 "East Norwalk Improvement Association",
+                                 "Edith Wheeler Memorial Library",
+                                 "Fairchild-Nichols Library",
+                                 "Fairfield Woods Branch Library",
+                                 "Ferguson Library",
+                                 "Greenwich Library",
+                                 "Harry Bennett Library",
+                                 "Huntington Branch",
+                                 "Long Ridge Library",
+                                 "Mark Twain Library",
+                                 "New Canaan Library",
+                                 "New Fairfield Free Public Library",
+                                 "Newfield Branch Library",
+                                 "Norwalk Public Library",
+                                 "Old Mill Green Branch Library",
+                                 "Pequot Library Association",
+                                 "Perrot Memorial Library",
+                                 "Plumb Memorial Library",
+                                 "Ridgefield Library",
+                                 "Rowayton Library",
+                                 "Sherman Library Assn.",
+                                 "South End Community Center Branch Library",
+                                 "South Norwalk Branch Library",
+                                 "Stratford Library Association",
+                                 "Trumbull Library",
+                                 "Weed Memorial Branch Library",
+                                 "Westport Public Library",
+                                 "Wilton Library Association"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Hartford",
+                            "libraries": [
+                                 "Albany Avenue Branch Library",
+                                 "Avon Free Public Library",
+                                 "Barbour Branch Library",
+                                 "Barney Branch Library",
+                                 "Berlin Free Library Association",
+                                 "Berlin-Peck Memorial Library",
+                                 "Bishop's Corner Branch Library",
+                                 "Blue Hills Branch Library",
+                                 "Broad Brook Library",
+                                 "Camp Field Branch Library",
+                                 "Chamberlain Branch Library",
+                                 "Cora J. Belden Library",
+                                 "Dwight Branch Library",
+                                 "East Berlin Library Association",
+                                 "East Glastonbury Public Library",
+                                 "East Granby Public Library",
+                                 "East Hartford Public Library",
+                                 "Enfield Public Library",
+                                 "F. N. Manross Memorial Library",
+                                 "Farmington Library",
+                                 "Faxon Branch Library",
+                                 "Frederick H. Cossitt Library",
+                                 "Goodwin Memorial Branch Library",
+                                 "Granby Public Library",
+                                 "Kent Memorial Library",
+                                 "Library Association Of Warehouse Point",
+                                 "Lucy Robbins Welles Library",
+                                 "New Britain Public Library",
+                                 "Pearl Street Branch Library",
+                                 "Prosser Public Library",
+                                 "Richmond Memorial Library",
+                                 "Ropkins Branch Library",
+                                 "Simsbury Public Library",
+                                 "South Glastonbury Public Library",
+                                 "South Windsor Public Library",
+                                 "Southington Public Library",
+                                 "Thomas Jefferson Branch Library",
+                                 "Welles-Turner Memorial Library",
+                                 "West Hartford Public Library",
+                                 "Wethersfield Public Library",
+                                 "Whiton Memorial Library",
+                                 "Wickham Memorial Library",
+                                 "Wilson Branch Library",
+                                 "Windsor Locks Public Library",
+                                 "Windsor Public Library",
+                                 "Wintonbury Branch Library",
+                                 "Wood Memorial Library And Museum"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Litchfield",
+                            "libraries": [
+                                 "Bakerville Library, Inc.",
+                                 "Beardsley & Memorial Library",
+                                 "Burnham Public Library",
+                                 "Cornwall Library Association",
+                                 "David M. Hunt Library",
+                                 "Douglas Library",
+                                 "Gilbert Library",
+                                 "Goshen Public Library",
+                                 "Gunn Memorial Library",
+                                 "Harwinton Public Library",
+                                 "Hotchkiss Library",
+                                 "Hughes Memorial Library",
+                                 "Kent Library Association",
+                                 "Licia & Mason Beekley Community Library",
+                                 "Minor Memorial Library",
+                                 "Oakville Branch Library",
+                                 "Oliver Wolcott Library",
+                                 "Plymouth Library Association",
+                                 "Scoville Memorial Library",
+                                 "Terryville Public Library",
+                                 "Thomaston Public Library",
+                                 "Torrington Library Association",
+                                 "Watertown Library Association"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Middlesex",
+                            "libraries": [
+                                 "Brainerd Memorial Library",
+                                 "Cromwell Belden Public Library",
+                                 "Deep River Public Library",
+                                 "Durham Public Library",
+                                 "East Haddam Free Public Library",
+                                 "East Hampton Public Library",
+                                 "Essex Library Association",
+                                 "Henry Carter Hull Library",
+                                 "Ivoryton Library Association",
+                                 "Killingworth Library",
+                                 "Levi E. Coe Library",
+                                 "Middle Haddam Public Library",
+                                 "Portland Public Library",
+                                 "Russell Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "New Haven",
+                            "libraries": [
+                                 "Ansonia Public Library",
+                                 "Atwater Memorial Library",
+                                 "Beacon Falls Public Library",
+                                 "Brundage Community Branch Library",
+                                 "Bunker Hill Branch Library",
+                                 "Case Memorial Library",
+                                 "Cheshire Public Library",
+                                 "Derby Neck Library",
+                                 "E.C. Scranton Memorial Library",
+                                 "Edward Smith Library",
+                                 "Fair Haven Branch Library",
+                                 "Guilford Free Library",
+                                 "Hagaman Memorial Library",
+                                 "Hamden Library System",
+                                 "Howard Whittemore Memorial Library",
+                                 "James Blackstone Memorial Library",
+                                 "Louis Piantino Branch Library",
+                                 "Meriden Public Library",
+                                 "Middlebury Public Library",
+                                 "Mitchell Branch Library",
+                                 "New Haven Free Public Library",
+                                 "North Haven Memorial Library",
+                                 "Ora Mason Branch Library",
+                                 "Prospect Public Library",
+                                 "Seymour Public Library",
+                                 "Silas Bronson Library",
+                                 "Southbury Public Library",
+                                 "Stetson Branch Library",
+                                 "Wallingford Public Library",
+                                 "West Haven Public Library",
+                                 "Whitneyville Branch Library",
+                                 "Willoughby Wallace Memorial Library",
+                                 "Wilson Branch",
+                                 "Wolcott Public Library",
+                                 "Woodbridge Town Library",
+                                 "Yalesville Branch Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "New London",
+                            "libraries": [
+                                 "Bill Library",
+                                 "Bill Memorial Library",
+                                 "Cragin Memorial Library",
+                                 "East Lyme Public Library",
+                                 "Gales Ferry Public Library",
+                                 "Groton Public Library",
+                                 "Janet Carlson Calvert Library",
+                                 "Jonathan Trumbull Library",
+                                 "Lyme Public Library",
+                                 "Mystic & Noank Library",
+                                 "Old Lyme - Phoebe Griffin Noyes Library",
+                                 "Otis Library",
+                                 "Public Library Of New London",
+                                 "Raymond Library",
+                                 "Slater Library & Fanning Annex",
+                                 "Stonington Free Library",
+                                 "Wheeler Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Tolland",
+                            "libraries": [
+                                 "Bentley Memorial Library",
+                                 "Booth & Dimock Memorial Library",
+                                 "Douglas Library Of Hebron",
+                                 "Mansfield Library",
+                                 "Rockville Public Library, Inc",
+                                 "Saxton B. Little Free Library",
+                                 "Somers Public Library",
+                                 "Stafford Library Association",
+                                 "Town Of Tolland Public Library",
+                                 "Willington Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Windham",
+                            "libraries": [
+                                 "Abington Social Library",
+                                 "Aldrich Free Public Library",
+                                 "Babcock Library",
+                                 "Brooklyn Town Library Association",
+                                 "Canterbury Public Library",
+                                 "Central Village Public Library",
+                                 "Chaplin Public Library",
+                                 "Eastford Public Library",
+                                 "Guilford Smith Memorial Library, Inc",
+                                 "Killingly Public Library",
+                                 "Pomfret Public Library",
+                                 "Putnam Public Library",
+                                 "Willimantic Public Library"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
                 "name": "Florida",
                 "counties": [
                     [
@@ -42,6 +300,348 @@
                             "libraries": [
                                 "library_five",
                                 "library_six"
+                            ]
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "name": "Maine",
+                "counties": [
+                    [
+                        {
+                            "name": "Androscoggin",
+                            "libraries": [
+                                 "Julia Adams Morse Memorial Library",
+                                 "Lewiston Public Library",
+                                 "Lisbon Library Dept",
+                                 "Livermore Public Library",
+                                 "Mechanic Falls Public Library",
+                                 "Ricker Memorial Library",
+                                 "Treat Memorial Library",
+                                 "Turner Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Aroostook",
+                            "libraries": [
+                                 "Abel J. Morneault Memorial Library",
+                                 "Ashland Community Library",
+                                 "Caribou Public Library",
+                                 "Cary Library-Houlton",
+                                 "Faye O'leary Hafford Library",
+                                 "Fort Fairfield Public Library",
+                                 "Fort Kent Public Library",
+                                 "Katahdin Public Library",
+                                 "Long Lake Public Library",
+                                 "Madawaska Public Library",
+                                 "Mark And Emily Turner Memorial Library",
+                                 "Robert A. Frost Memorial Library",
+                                 "Walter T. A. Hansen Memorial Library",
+                                 "Washburn Memorial Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Cumberland",
+                            "libraries": [
+                                 "Baxter Memorial Library",
+                                 "Bolsters Mills Village Library",
+                                 "Bridgton Public Library",
+                                 "Brown Memorial Library - Baldwin",
+                                 "Casco Public Library",
+                                 "Chebeague Island Library",
+                                 "Cliff Island Library",
+                                 "Cundy's Harbor Library",
+                                 "Curtis Memorial Library",
+                                 "Falmouth Memorial Library",
+                                 "Freeport Community Library",
+                                 "Gray Public Library",
+                                 "Harrison Village Library",
+                                 "Long Island Community Library",
+                                 "Merrill Memorial Library",
+                                 "North Bridgton Public Library",
+                                 "North Gorham Public Library",
+                                 "Orrs Island Library",
+                                 "Portland - Burbank Branch Library",
+                                 "Portland - Munjoy Branch Library",
+                                 "Portland - Peaks Island Branch Library",
+                                 "Portland - Reiche Branch Library",
+                                 "Portland - Riverton Branch Library",
+                                 "Prince Memorial Library",
+                                 "Raymond Village Library",
+                                 "Richville Library",
+                                 "Scarborough Public Library",
+                                 "South Portland - Memorial Branch Library",
+                                 "South Portland Public Library",
+                                 "South Windham Public Library",
+                                 "Spaulding Memorial Library",
+                                 "Steep Falls Library",
+                                 "Thomas Memorial Library",
+                                 "Walker Memorial Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Franklin",
+                            "libraries": [
+                                 "Carrabassett Valley Public Library",
+                                 "Jay-Niles Memorial Library",
+                                 "New Vineyard Public Library",
+                                 "Rangeley Public Library",
+                                 "Stratton Public Library",
+                                 "Strong Public Library",
+                                 "Webster Free Library",
+                                 "Weld Public Library",
+                                 "Wilton Free Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Hancock",
+                            "libraries": [
+                                 "Bass Harbor Memorial Library",
+                                 "Brooksville Free Public Library",
+                                 "Buck Memorial Library",
+                                 "Chase Emerson Memorial Library",
+                                 "Dorcas Library",
+                                 "East Blue Hill Public Library",
+                                 "Ellsworth Public Library",
+                                 "Frenchboro Public Library",
+                                 "Frenchmans Bay Library",
+                                 "Friend Memorial Public Library",
+                                 "Great Cranberry Library",
+                                 "Islesford Library",
+                                 "Jesup Memorial Library",
+                                 "Northeast Harbor Library",
+                                 "Otis Public Library",
+                                 "Sedgwick - Sargentville Library Assn",
+                                 "Sedgwick Library Assn",
+                                 "Somesville Library Association",
+                                 "Southwest Harbor Public Library",
+                                 "Stonington Public Library",
+                                 "Swans Island Public Library",
+                                 "Winter Harbor Public Library",
+                                 "Witherle Memorial Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Kennebec",
+                            "libraries": [
+                                 "Albert Church Brown Memorial Library",
+                                 "Belgrade Public Library",
+                                 "Brown Memorial Library - Clinton",
+                                 "Cary Memorial Library-wayne",
+                                 "Charles M. Bailey Public Library",
+                                 "Cumston Public Library",
+                                 "Dr. Shaw Memorial Library",
+                                 "Gardiner Public Library",
+                                 "Hubbard Free Library",
+                                 "Lithgow Public Library",
+                                 "Oakland Public Library",
+                                 "Readfield Community Library",
+                                 "South China Public Library",
+                                 "Underwood Memorial Library",
+                                 "Vassalboro Public Library",
+                                 "Winslow Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Knox",
+                            "libraries": [
+                                 "Camden Public Library",
+                                 "Friendship Public Library",
+                                 "Jackson Memorial Library",
+                                 "North Haven Public Library",
+                                 "Owls Head Village Library",
+                                 "Revere Memorial Library",
+                                 "Rockland Public Library",
+                                 "Rockport Public Library",
+                                 "South Thomaston Public Library",
+                                 "Vinalhaven Public Library",
+                                 "Warren Free Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Lincoln",
+                            "libraries": [
+                                 "Boothbay Harbor Memorial Library",
+                                 "Bremen Public Library",
+                                 "Bristol Area Library",
+                                 "Monhegan Memorial Library",
+                                 "Rutherford Library",
+                                 "Skidompha Public Library",
+                                 "Southport Memorial Library",
+                                 "Wiscasset Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Oxford",
+                            "libraries": [
+                                 "Bethel Library Assn.",
+                                 "Brownfield Public Library",
+                                 "Charlotte Hobbs Memorial Library",
+                                 "Denmark Public Library",
+                                 "Freeland Holmes Library",
+                                 "Fryeburg Public Library",
+                                 "Lewis Dana Hill Memorial Library",
+                                 "Mexico Free Public Library",
+                                 "Norway Memorial Library",
+                                 "Rumford Public Library",
+                                 "Waterford Library Association",
+                                 "West Paris Public Library",
+                                 "Whitman Memorial Library",
+                                 "Zadoc Long Free Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Penobscot",
+                            "libraries": [
+                                 "Abbott Memorial Library",
+                                 "Bangor Public Library",
+                                 "Brewer Public Library",
+                                 "Cole Memorial Library",
+                                 "East Millinocket Public Library",
+                                 "Edythe Dyer Community Library",
+                                 "Lincoln Memorial Library",
+                                 "Mattawamkeag Public Library",
+                                 "Millinocket Memorial Library",
+                                 "Old Town Public Library",
+                                 "Orono Public Library",
+                                 "Orrington Public Library",
+                                 "Veterans Memorial Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Piscataquis",
+                            "libraries": [
+                                 "Brownville Public Library",
+                                 "Guilford Memorial Library",
+                                 "Harvey Memorial Library",
+                                 "Milo Free Public Library",
+                                 "Monson Public Library",
+                                 "Sangerville Public Library",
+                                 "Shaw Public Library - Greenville",
+                                 "Thompson Free Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Sagadahoc",
+                            "libraries": [
+                                 "Albert F. Totman Library",
+                                 "Bowdoinham Public Library",
+                                 "Isaac F. Umberhine Public Library",
+                                 "Laura E. Richards Library",
+                                 "Patten Free Library",
+                                 "Topsham Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Somerset",
+                            "libraries": [
+                                 "Bingham Union Library",
+                                 "Coolidge Library",
+                                 "Jackman Public Library",
+                                 "Lawrence Public Library",
+                                 "New Portland Community Library",
+                                 "Pittsfield Public Library",
+                                 "Skowhegan Public Library",
+                                 "Stewart Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Waldo",
+                            "libraries": [
+                                 "Alice L. Pendleton Library",
+                                 "Belfast Free Library",
+                                 "Dorothy W Quimby Library",
+                                 "Ivan O. Davis-Liberty Library",
+                                 "Monroe Community Library",
+                                 "Palermo Community Library",
+                                 "Stockton Springs Community Library",
+                                 "Waldo Peirce Reading Room",
+                                 "Winterport Memorial Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "Washington",
+                            "libraries": [
+                                 "Cherryfield Public Library",
+                                 "Danforth Public Library",
+                                 "Gallison Memorial Library",
+                                 "Henry D. Moore Library",
+                                 "Lincoln Memorial Library - Dennysville",
+                                 "Louise Clements Library",
+                                 "Lubec Memorial Library",
+                                 "Mayhew Library Assn",
+                                 "Milbridge Public Library",
+                                 "Peabody Memorial Library",
+                                 "Peavey Memorial Library",
+                                 "Pembroke Library",
+                                 "Sturdivant Public Library",
+                                 "Whitneyville Public Library"
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "name": "York",
+                            "libraries": [
+                                 "Acton Public Library",
+                                 "Berry Memorial Library",
+                                 "Berwick Public Library",
+                                 "Cape Porpoise Library",
+                                 "Community Library",
+                                 "D.A. Hurd Library",
+                                 "Dyer Library",
+                                 "Goodall Memorial Library",
+                                 "Hollis Center Public Library",
+                                 "Kennebunk Free Library",
+                                 "Kezar Falls Circulating Library",
+                                 "Libby Memorial Library",
+                                 "Limerick Public Library",
+                                 "Louis T. Graves Memorial Library",
+                                 "Martha Sawyer Community Library",
+                                 "Mcarthur Public Library",
+                                 "Ocean Park Memorial Library",
+                                 "Ogunquit Memorial Library",
+                                 "Parsons Memorial Library",
+                                 "Rice Public Library",
+                                 "Salmon Falls Library",
+                                 "Shapleigh Community Library",
+                                 "South Berwick Public Library",
+                                 "Springvale Public Library",
+                                 "Waterboro Public Library",
+                                 "Wells Public Library",
+                                 "West Buxton Public Library Association",
+                                 "York Public Library"
                             ]
                         }
                     ]
