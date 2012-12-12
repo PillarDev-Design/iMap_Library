@@ -178,6 +178,44 @@ body, html{
                 -webkit-box-shadow: 0px 5px 10px #CCC inset;
                 box-shadow: 0px 5px 10px #CCC inset;
             }
+            #current_selection_label_dynamic_container{
+                float: left;
+                margin-left: 20px;
+            }
+            .current_selection_label_dynamic_scheme{
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+                float: left;
+                font-family: 'Lucida Sans Unicode', 'Lucinda Grande', sans-serif;
+                font-size: .9em;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-top: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
+                position: relative;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                -moz-box-shadow: 0px 5px 10px #CCC inset;
+                -webkit-box-shadow: 0px 5px 10px #CCC inset;
+                box-shadow: 0px 5px 10px #CCC inset;
+            }
+            .current_selection_label_dynamic_space{
+                background: #E4FFC5;
+                float:left;
+                font-size: .8em;
+                font-weight: bold;
+                margin-left: 10px;
+                margin-top: 4px;
+                position: relative;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                -moz-box-shadow: 0px 5px 10px #9DC63F;
+                -webkit-box-shadow: 0px 5px 10px #9DC63F;
+                box-shadow: 0px 5px 10px #9DC63F;
+            }
     #first_main_container{
         background: #E4FFC5;
         border-bottom: 2px solid #CCC;

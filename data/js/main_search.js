@@ -122,7 +122,7 @@ function mainSearch(filePath){
                 $('home_page_information_container').set('tween', { duration: 1000 }).fade('out');
 
                 // 2.3) Fade out the Breadcrumbs                              \\
-                $('current_selection_label_dynamic').set('tween', { duration: 1000 }).fade('out');
+                $('current_selection_label_dynamic_container').set('tween', { duration: 1000 }).fade('out');
 
                 // 2.4) Create first_section_select_county                    \\
                 $('first_section_scroll_area').innerHTML = "";
@@ -150,7 +150,7 @@ function mainSearch(filePath){
                 // 2.7) Create the County Search section                      \\
                 
                 // 2.8) Update the Breadcrumbs                                \\
-                $('current_selection_label_dynamic').innerHTML = (selectedState);
+                $('current_selection_label_dynamic_container').innerHTML = ("<div class='current_selection_label_dynamic_scheme'>" + selectedState + "</div>");
                 
                 // 2.9) Fade in the first_section_select_county               \\
                 $('first_section_select_county').set('tween', { duration: 1100 }).fade('in');
@@ -165,7 +165,7 @@ function mainSearch(filePath){
                 // 2.12) Fade in the County Search Section                    \\
                 
                 // 2.13) Fade in the Breadcrumbs                              \\
-                $('current_selection_label_dynamic').set('tween', { duration: 1100 }).fade('in');
+                $('current_selection_label_dynamic_container').set('tween', { duration: 1100 }).fade('in');
 
                 // 2.14) Add Event to the Back button                         \\
                 $('first_section_back_county').addEvent('click', function(){
@@ -194,7 +194,6 @@ function mainSearch(filePath){
                         //    - second_section_county_wrapper                 \\
                         //    - third_section_county_data_vis_container       \\
                         // 4. Fade in                                         \\
-                        //    - Breadcrumbs                                   \\
                         //    - first_section_select_library                  \\
                         //    - first_section_back_library                    \\
                         //    - first_section_back_to_state_library           \\
@@ -209,7 +208,11 @@ function mainSearch(filePath){
                         numOfCounties = $('first_section_select_county').options.length;
 
                         // 1. Update Breadcrumbs                              \\
-                        $('current_selection_label_dynamic').innerHTML = (selectedState + " : " + selectedCounty);
+                        placeHolder = "";
+                        placeHolder += ("<div class='current_selection_label_dynamic_scheme'>" + selectedState + "</div>");
+                        placeHolder += ("<div class='current_selection_label_dynamic_space'>" + " :: " + "</div>");
+                        placeHolder += ("<div class='current_selection_label_dynamic_scheme'>" + selectedCounty + "</div>");
+                        $('current_selection_label_dynamic_container').innerHTML = placeHolder;
                         
                         // 2. Fade out                                        \\
                         //    - first_section_select_county                   \\
@@ -257,13 +260,11 @@ function mainSearch(filePath){
                         
                         
                         // 6. Fade in                                         \\
-                        //    - Breadcrumbs                                   \\
                         //    - first_section_select_library                  \\
                         //    - first_section_back_library                    \\
                         //    - first_section_back_to_state_library           \\
                         //    - second_section_county_wrapper                 \\
                         //    - third_section_county_data_vis_container       \\
-                        $('current_selection_label_dynamic').set('tween', { duration: 1100 }).fade('in');
                         $('first_section_select_library').set('tween', { duration: 1100 }).fade('in');
                         $('first_section_back_library').set('tween', { duration: 1100 }).fade('in');
                         $('first_section_back_to_state_library').set('tween', { duration: 1100 }).fade('in');
