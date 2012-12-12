@@ -340,7 +340,23 @@ body, html{
             -webkit-box-shadow: 0px 5px 10px #CCC inset;
             box-shadow: 0px 5px 10px #CCC inset;
         }
+        #first_section_back_to_state_library{
+            float: left !important;
+            font-size: .9em !important;
+            padding-top: 13px !important;
+            position: relative !important;
+            top: -2px !important;
+            width: 35% !important;
+            z-index: 9999;
+        }
+        #first_section_back_library{
+            z-index: 9998;
+        }
     #second_section_wrapper{
+    }
+    #second_section_county_wrapper{
+    }
+    .second_section_container{
         background: #F2F2E6;
         border: 1px solid #CCC;
         height: 97%;
@@ -353,6 +369,10 @@ body, html{
         border-radius: 15px;
     }
         #second_section_label{
+        }
+        #second_section_county_label{
+        }
+        .second_section_label_scheme{
             border-bottom: 1px solid #CCC;
             font-family: 'Lucinda Sans Unicode', 'Lucinda Grande', sans-serif;
             font-size: 1.5em;
@@ -363,12 +383,20 @@ body, html{
             text-align: center;
         }
         #second_section_content{
+        }
+        #second_section_county_content{
+        }
+        .second_section_content_scheme{
             height: 80%;
             margin-left: 1%;
             position: relative;
             width: 98%;
         }
             #second_section_content_left{
+            }
+            #second_section_county_content_left{
+            }
+            .second_section_content_left_scheme{
                 background: #E4FFC5;
                 border: 1px solid #CCC;
                 float: left;
@@ -382,6 +410,10 @@ body, html{
                 border-radius: 10px;
             }
                 #second_section_content_left_title{
+                }
+                #second_section_county_content_left_title{
+                }
+                .second_section_content_left_title_scheme{
                     border-bottom: 1px solid #C4B8B8;
                     font-size: 1.2em;
                     position: relative;
@@ -390,7 +422,15 @@ body, html{
                 }
                 #second_section_content_left_content{
                 }
+                #second_section_county_content_left_content{
+                }
+                .second_section_content_left_content_scheme{
+                }
             #second_section_content_right{
+            }
+            #second_section_county_content_right{
+            }
+            .second_section_content_right_scheme{
                 background: #E4FFC5;
                 border: 1px solid #CCC;
                 float: left;
@@ -404,6 +444,10 @@ body, html{
                 border-radius: 10px;
             }
                 #second_section_content_right_title{
+                }
+                #second_section_county_content_right_title{
+                }
+                .second_section_content_right_title_scheme{
                     border-bottom: 1px solid #C4B8B8;
                     font-size: 1.2em;
                     position: relative;
@@ -411,6 +455,10 @@ body, html{
                     width: 100%;
                 }
                 #second_section_content_right_content{
+                }
+                #second_section_county_content_right_content{
+                }
+                .second_section_content_right_content_scheme{
                 }
     #third_section_container{
         background: #E4FFC5;
@@ -430,6 +478,17 @@ body, html{
             }
             #home_page_information_content{
             }
+        #third_section_state_data_vis_container{
+            margin-left: 0% !important;
+            opacity: 0;
+            position: absolute !important;
+            width: 98% !important;
+            visibility: hidden;
+        }
+            #third_section_state_data_vis_label{
+            }
+            #third_section_state_data_vis_content{
+            }
         #third_section_county_data_vis_container{
             margin-left: 0% !important;
             opacity: 0;
@@ -437,10 +496,6 @@ body, html{
             width: 98% !important;
             visibility: hidden;
         }
-            #third_section_county_data_vis_label{
-            }
-            #third_section_county_data_vis_content{
-            }
         .third_section_container{
             background: #F2F2E6;
             border: 1px solid #CCC;

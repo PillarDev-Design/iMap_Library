@@ -26,7 +26,8 @@ function mainSearch(filePath){
             numOfStates = libraries['states'].length,
             selectedState,
             selectedCounty,
-            numOfCounties;
+            numOfCounties,
+            numOfLibraries;
 
         //####################################################################\\
         // Examples                                                           \\
@@ -140,7 +141,7 @@ function mainSearch(filePath){
                 // they both are being loaded into the same div.
 
                 // 2.5) Create the Back button under the select list          \\
-                placeHolder += "<div id='first_section_back_county' class='main_search_back_button' style='opacity: 0; visbility: hidden;'>Back To State List</div>"
+                placeHolder += "<div id='first_section_back_county' class='main_search_back_button' style='opacity: 0; visbility: hidden;'>Back To State List</div>";
                 $('first_section_scroll_area').innerHTML = placeHolder;
                 
                 // 2.6) Create the State Attributes section                   \\
@@ -159,7 +160,7 @@ function mainSearch(filePath){
                 
                 // 2.11) Fade in the State Attributes section                 \\
                 $('second_section_wrapper').set('tween', { duration: 1100 }).fade('in');
-                $('third_section_county_data_vis_container').set('tween', { duration: 1100 }).fade('in');
+                $('third_section_state_data_vis_container').set('tween', { duration: 1100 }).fade('in');
                 
                 // 2.12) Fade in the County Search Section                    \\
                 
@@ -172,6 +173,110 @@ function mainSearch(filePath){
                 });
                 
                 // 2.15) Add Event to the first_section_select_county         \\
+                $('first_section_select_county').addEvent('click', function(){
+                    if($('first_section_select_county').value === ""){
+                    } else {
+                        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+                        // Events                                             \\
+                        // -------------------------------------------------- \\
+                        // Fire these events on clicking a county             \\
+                        //                                                    \\
+                        // 1. Update Breadcrumbs                              \\
+                        // 2. Fade out                                        \\
+                        //    - first_section_select_county                   \\
+                        //    - first_section_back_county                     \\
+                        //    - second_section_wrapper                        \\
+                        //    - third_section_state_data_vis_container        \\
+                        // 3. Create                                          \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                        //    - second_section_county_wrapper                 \\
+                        //    - third_section_county_data_vis_container       \\
+                        // 4. Fade in                                         \\
+                        //    - Breadcrumbs                                   \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                        //    - second_section_county_wrapper                 \\
+                        //    - third_section_county_data_vis_container       \\
+                        // 5. Add Events                                      \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
+                        selectedCounty = $('first_section_select_county').value;
+                        numOfCounties = $('first_section_select_county').options.length;
+
+                        // 1. Update Breadcrumbs                              \\
+                        $('current_selection_label_dynamic').innerHTML = (selectedState + " : " + selectedCounty);
+                        
+                        // 2. Fade out                                        \\
+                        //    - first_section_select_county                   \\
+                        //    - first_section_back_county                     \\
+                        //    - second_section_wrapper                        \\
+                        //    - third_section_state_data_vis_container        \\
+                        $('first_section_select_county').set('tween', { duration: 1000 }).fade('out');
+                        $('first_section_back_county').set('tween', { duration: 1000 }).fade('out');
+                        $('second_section_wrapper').set('tween', { duration: 1000 }).fade('out');
+                        $('third_section_state_data_vis_container').set('tween', { duration: 1000 }).fade('out');
+                        
+                        // 3. Create                                          \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                        //    - second_section_county_wrapper                 \\
+                        //    - third_section_county_data_vis_container       \\
+                        $('first_section_scroll_area').innerHTML = "";
+                        placeHolder = "";
+                        placeHolder += "<select size='20' id='first_section_select_library' name='first_section_select_library' style='opacity: 0; visibility: hidden;'>";
+                        for(var i=0; i<numOfStates; i++){
+                            if(libraries['states'][i][0]['name'] === selectedState){
+                                for(var j=0; j<numOfCounties; j++){
+                                    if(libraries['states'][i][0]['counties'][j][0]['name'] === selectedCounty){
+                                        numOfLibraries = libraries['states'][i][0]['counties'][j][0]['libraries'].length;
+                                        for(var k=0; k<numOfLibraries; k++){
+                                            placeHolder += ("<option value='" + libraries['states'][i][0]['counties'][j][0]['libraries'][k] + "'>" + libraries['states'][i][0]['counties'][j][0]['libraries'][k] + "</option>");
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        placeHolder += "</select>";
+
+                        placeHolder += "<div id='first_section_back_to_state_library' class='main_search_back_button' style='opacity: 0; visbility: hidden;'>Back To State List</div>";
+                        placeHolder += "<div id='first_section_back_library' class='main_search_back_button' style='opacity: 0; visbility: hidden;'>Back To County List</div>";
+                        placeHolder += "<div class='clear'></div>";
+
+                        $('first_section_scroll_area').innerHTML = placeHolder;
+                        
+                        // *** Second Section ***
+                        $('second_section_county_label').innerHTML = (selectedCounty + " Attributes");
+                        
+                        // *** Third Section ***
+                        
+                        
+                        // 6. Fade in                                         \\
+                        //    - Breadcrumbs                                   \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                        //    - second_section_county_wrapper                 \\
+                        //    - third_section_county_data_vis_container       \\
+                        $('current_selection_label_dynamic').set('tween', { duration: 1100 }).fade('in');
+                        $('first_section_select_library').set('tween', { duration: 1100 }).fade('in');
+                        $('first_section_back_library').set('tween', { duration: 1100 }).fade('in');
+                        $('first_section_back_to_state_library').set('tween', { duration: 1100 }).fade('in');
+                        $('second_section_county_wrapper').set('tween', { duration: 1100 }).fade('in');
+                        $('third_section_county_data_vis_container').set('tween', { duration: 1100 }).fade('in');
+                        
+
+                        // 7. Add Events                                      \\
+                        //    - first_section_select_library                  \\
+                        //    - first_section_back_library                    \\
+                        //    - first_section_back_to_state_library           \\
+                    }
+                });
             }
 
         }
@@ -203,7 +308,7 @@ function mainSearch(filePath){
             
             // 4) Fade second_section_wrapper                                 \\
             $('second_section_wrapper').set('tween', { duration: 1000 }).fade('out');
-            $('third_section_county_data_vis_container').set('tween', { duration: 1000 }).fade('out');
+            $('third_section_state_data_vis_container').set('tween', { duration: 1000 }).fade('out');
             
             // 5) Fade County Search Area                                     \\
             
