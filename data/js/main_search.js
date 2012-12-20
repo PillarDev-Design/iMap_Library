@@ -116,6 +116,7 @@ function mainSearch(filePath){
                 // 5. Add Events                                              \\
                 //    - first_section_back_county                             \\
                 //    - first_section_select_county                           \\
+                // 6. Move window location to the second section              \\
                 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
                 
                 // 1. Update Breadcrumbs                                      \\
@@ -178,6 +179,9 @@ function mainSearch(filePath){
                         addEventToMainCountySelect(selectedState, selectedCounty, numOfCounties);
                     }
                 });
+
+                // 6. Move window location to the second section              \\
+                window.location = "#county_quick_search_container";
             }
         }
         function addEventToMainCountySelect(currentState, currentCounty, currentNumOfCounties){
@@ -209,6 +213,7 @@ function mainSearch(filePath){
             //    - first_section_select_library                              \\
             //    - first_section_back_library                                \\
             //    - first_section_back_to_state_library                       \\
+            // 6. Move window location to the second section                  \\
             //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\
 
             // 1. Update Breadcrumbs                                          \\
@@ -286,6 +291,8 @@ function mainSearch(filePath){
                     // Events to be Fire when Library is selected
                 }
             });
+            // 6. Move window location to the second section                  \\
+            window.location = "#county_quick_search_container";
         }
         
         function libraryBackButton(currentCounty, currentState){
